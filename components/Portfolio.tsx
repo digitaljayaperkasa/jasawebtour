@@ -50,11 +50,16 @@ const Portfolio = () => {
               viewport={{ once: true }}
               className="text-3xl md:text-4xl font-bold mb-4"
             >
-              Portfolio <span className="text-cyan-400">Terbaru</span>
+              Beberapa Website yang <span className="text-cyan-400">Pernah Kami Kerjakan</span>
             </motion.h2>
-            <p className="text-slate-400 max-w-xl">
-              Beberapa contoh website tour & travel yang telah kami bangun untuk klien kami.
-            </p>
+            <div className="text-slate-400 max-w-xl space-y-2">
+              <p>Website yang kami buat:</p>
+              <ul className="list-disc list-inside text-cyan-400 font-medium">
+                <li>Lebih profesional</li>
+                <li>Lebih mudah dipahami</li>
+                <li>Lebih siap menghasilkan inquiry</li>
+              </ul>
+            </div>
           </div>
           <motion.a
             whileHover={{ x: 5 }}

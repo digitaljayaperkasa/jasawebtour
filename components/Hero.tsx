@@ -30,8 +30,12 @@ const Hero = () => {
               Jasa Pembuatan <span className="text-gradient">Website Tour</span> yang Fokus Datangkan Booking
             </h1>
             
-            <p className="text-lg text-slate-400 mb-8 max-w-xl leading-relaxed">
-              Ubah pengunjung menjadi pembeli dengan website tour yang profesional, cepat, dan SEO optimized. Solusi digital terbaik untuk bisnis travel Indonesia.
+            <p className="text-lg text-slate-400 mb-4 max-w-xl leading-relaxed">
+              Website bukan cuma tampilan. Kami bantu bisnis tour & travel Anda terlihat profesional, dipercaya, dan lebih mudah closing setiap hari.
+            </p>
+            
+            <p className="text-cyan-400 font-bold mb-8">
+              👉 Cocok untuk driver, tour organizer, hingga agency yang ingin scale
             </p>
             
             <div className="flex flex-col sm:flex-row items-center gap-4">
@@ -44,7 +48,7 @@ const Hero = () => {
                 className="w-full sm:w-auto flex items-center justify-center gap-2 bg-cyan-500 hover:bg-cyan-400 text-secondary font-bold py-4 px-8 rounded-full transition-all shadow-lg shadow-cyan-500/20"
               >
                 <MessageCircle size={20} />
-                Konsultasi via WhatsApp
+                Konsultasi Gratis via WhatsApp
               </motion.a>
               
               <motion.a

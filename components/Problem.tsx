@@ -9,22 +9,27 @@ const Problem = () => {
     {
       icon: <TrendingDown className="text-red-400" />,
       title: 'Sepi Booking',
-      desc: 'Website lama tidak menghasilkan leads atau booking sama sekali.',
+      desc: 'Sudah punya website, tapi tidak ada yang booking.',
     },
     {
-      icon: <UserX className="text-orange-400" />,
-      title: 'Tidak Profesional',
-      desc: 'Tampilan web jadul membuat calon tamu ragu untuk transfer.',
+      icon: <AlertCircle className="text-orange-400" />,
+      title: 'Masih Manual',
+      desc: 'Masih pakai cara manual (chat satu-satu, ribet).',
     },
     {
-      icon: <Search className="text-yellow-400" />,
+      icon: <UserX className="text-yellow-400" />,
+      title: 'Kurang Meyakinkan',
+      desc: 'Tampilan website kurang meyakinkan calon tamu.',
+    },
+    {
+      icon: <Search className="text-blue-400" />,
       title: 'Kalah Saing',
-      desc: 'Sulit ditemukan di Google karena tidak dioptimasi SEO.',
+      desc: 'Kalah saing dengan kompetitor di Google.',
     },
     {
-      icon: <AlertCircle className="text-blue-400" />,
-      title: 'Ketergantungan OTA',
-      desc: 'Terlalu bergantung pada agent atau OTA dengan komisi tinggi.',
+      icon: <AlertCircle className="text-red-400" />,
+      title: 'Tergantung OTA',
+      desc: 'Terlalu bergantung ke OTA / pihak ketiga.',
     },
   ];
 
@@ -51,9 +56,9 @@ const Problem = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-4xl font-bold mb-4"
+            className="text-3xl md:text-4xl font-bold mb-4 uppercase tracking-tight"
           >
-            Masalah yang Sering Dihadapi <span className="text-red-400">Bisnis Tour</span>
+            Masih Begini?
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -62,7 +67,7 @@ const Problem = () => {
             transition={{ delay: 0.1 }}
             className="text-slate-400 max-w-2xl mx-auto"
           >
-            Jangan biarkan bisnis tour Anda stagnan karena infrastruktur digital yang buruk.
+            Banyak bisnis tour stuck di sini:
           </motion.p>
         </div>
 
@@ -71,7 +76,7 @@ const Problem = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
+          className="grid md:grid-cols-2 lg:grid-cols-5 gap-6"
         >
           {problems.map((problem, index) => (
             <motion.div
@@ -86,6 +91,17 @@ const Problem = () => {
               <p className="text-slate-400 text-sm leading-relaxed">{problem.desc}</p>
             </motion.div>
           ))}
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          className="mt-16 text-center p-6 rounded-2xl bg-red-500/10 border border-red-500/20"
+        >
+          <p className="text-xl font-bold text-red-400">
+            👉 Hasilnya: capek kerja, tapi closing tidak maksimal
+          </p>
         </motion.div>
       </div>
     </section>

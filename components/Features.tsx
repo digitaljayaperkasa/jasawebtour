@@ -2,39 +2,39 @@
 
 import React from 'react';
 import { motion } from 'motion/react';
-import { Package, Calendar, Zap, Shield, BarChart3, Globe } from 'lucide-react';
+import { Package, Zap, Globe, Smartphone, MessageSquare, Search } from 'lucide-react';
 
 const Features = () => {
   const features = [
     {
       icon: <Package size={24} />,
-      title: 'Manajemen Paket Tour',
-      desc: 'Input paket tour, itinerary, dan harga dengan sangat mudah.',
+      title: 'Struktur Paket Tour',
+      desc: 'Rapi & mudah dipilih oleh calon tamu Anda.',
     },
     {
-      icon: <Calendar size={24} />,
-      title: 'Sistem Inquiry',
-      desc: 'Formulir pemesanan yang langsung terhubung ke email & WhatsApp.',
+      icon: <Smartphone size={24} />,
+      title: 'Mobile Friendly',
+      desc: '90% traffic dari HP, tampilan web kami sempurna di smartphone.',
     },
     {
       icon: <Zap size={24} />,
-      title: 'Ultra Fast Loading',
-      desc: 'Optimasi performa agar tamu tidak kabur karena web lambat.',
+      title: 'Loading Cepat',
+      desc: 'Optimasi performa agar tidak bikin orang kabur karena web lambat.',
     },
     {
-      icon: <Shield size={24} />,
-      title: 'Security & SSL',
-      desc: 'Keamanan data terjamin dengan sertifikat SSL gratis.',
-    },
-    {
-      icon: <BarChart3 size={24} />,
-      title: 'Analytics Ready',
-      desc: 'Pantau trafik dan perilaku pengunjung dengan Google Analytics.',
+      icon: <MessageSquare size={24} />,
+      title: 'Integrasi WhatsApp',
+      desc: 'Tombol booking langsung terhubung ke WhatsApp Anda.',
     },
     {
       icon: <Globe size={24} />,
-      title: 'Custom Domain',
-      desc: 'Gunakan domain .com atau .id untuk branding yang kuat.',
+      title: 'Navigasi Jelas',
+      desc: 'Mudah dipahami oleh pengunjung segala usia.',
+    },
+    {
+      icon: <Search size={24} />,
+      title: 'SEO Basic',
+      desc: 'Biar website Anda mulai muncul di pencarian Google.',
     },
   ];
 
@@ -48,10 +48,13 @@ const Features = () => {
             viewport={{ once: true }}
             className="text-3xl md:text-4xl font-bold mb-4"
           >
-            Fitur Canggih untuk <span className="text-cyan-400">Skala Bisnis</span>
+            Sistem Website yang <span className="text-cyan-400">Siap Dipakai Jualan</span>
           </motion.h2>
-          <p className="text-slate-400 max-w-2xl mx-auto">
-            Sistem yang kami bangun dirancang untuk memudahkan operasional dan meningkatkan kepercayaan tamu.
+          <p className="text-slate-400 max-w-2xl mx-auto mb-4">
+            Semua website sudah dilengkapi:
+          </p>
+          <p className="text-cyan-400 font-bold">
+            👉 Dibuat khusus untuk industri tour & travel, bukan template umum
           </p>
         </div>
 

@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'motion/react';
-import { MessageCircle, Zap } from 'lucide-react';
+import { MessageCircle, Zap, Check } from 'lucide-react';
 
 const FinalCTA = () => {
   return (
@@ -22,11 +22,21 @@ const FinalCTA = () => {
           </div>
 
           <h2 className="text-3xl md:text-5xl font-extrabold mb-6 leading-tight">
-            Mulai Website Tour Anda & Dapatkan <span className="text-gradient">Booking Lebih Konsisten</span>
+            Mulai Website Tour Anda <span className="text-gradient">Sekarang</span>
           </h2>
           
-          <p className="text-lg text-slate-300 mb-10 max-w-2xl mx-auto">
-            Jangan tunda lagi. Kompetitor Anda mungkin sudah mulai. Konsultasikan kebutuhan website tour Anda sekarang secara gratis!
+          <div className="text-lg text-slate-300 mb-10 max-w-2xl mx-auto space-y-4">
+            <p>Jangan tunggu sampai kompetitor ambil market Anda duluan.</p>
+            <p className="font-bold text-cyan-400">Website yang tepat bisa bantu Anda:</p>
+            <ul className="flex flex-col items-center gap-2">
+              <li className="flex items-center gap-2"><Check size={18} className="text-cyan-400" /> Lebih dipercaya</li>
+              <li className="flex items-center gap-2"><Check size={18} className="text-cyan-400" /> Lebih mudah closing</li>
+              <li className="flex items-center gap-2"><Check size={18} className="text-cyan-400" /> Lebih banyak booking</li>
+            </ul>
+          </div>
+
+          <p className="text-cyan-400 font-bold mb-8">
+            👉 Konsultasi gratis sekarang, kami bantu arahkan yang paling cocok untuk bisnis Anda
           </p>
 
           <motion.a
@@ -38,7 +48,7 @@ const FinalCTA = () => {
             className="inline-flex items-center gap-3 bg-cyan-500 hover:bg-cyan-400 text-secondary font-black text-xl py-5 px-12 rounded-full transition-all shadow-2xl shadow-cyan-500/40"
           >
             <MessageCircle size={24} />
-            Hubungi Kami Sekarang
+            Chat WhatsApp Sekarang
           </motion.a>
           
           <div className="mt-8 text-sm text-slate-400 font-medium">

@@ -10,13 +10,15 @@ const Pricing = () => {
       name: 'Starter',
       price: '1.750.000',
       renewal: '750.000',
+      description: 'Untuk yang baru mulai',
+      target: '👉 Cocok untuk driver / usaha kecil',
       features: [
-        '10 Paket Tour',
-        'Hosting 5GB SSD',
-        'Domain .com (1 Thn)',
-        'Mobile Responsive',
-        'WhatsApp Integration',
-        'Basic SEO Setup',
+        'Maksimal 10 Paket Tour',
+        'Design Simple & Clean',
+        'Halaman: Home, About, Contact',
+        'Detail Paket (Itinerary, Harga, Galeri)',
+        'Tombol WhatsApp Langsung',
+        'Hosting 5GB + Domain .com',
       ],
       isPopular: false,
     },
@@ -24,15 +26,17 @@ const Pricing = () => {
       name: 'Profesional',
       price: '3.500.000',
       renewal: '900.000',
+      description: 'Untuk bisnis yang ingin naik level',
+      target: '👉 Cocok untuk tour yang sudah jalan',
       features: [
-        '20 Paket Tour',
-        'Hosting 10GB SSD',
-        'Domain .com (1 Thn)',
-        'Premium Design',
-        'WhatsApp Integration',
-        'Advanced SEO Setup',
-        'Google Analytics',
-        'Support Prioritas',
+        'Maksimal 20 Paket Tour',
+        'Design Lebih Premium & Rapi',
+        'Struktur Kategori Paket',
+        'Detail Paket Lengkap',
+        'SEO Basic',
+        'Landing Page per Paket',
+        'CTA Lebih Optimal',
+        'Hosting 10GB + Domain .com',
       ],
       isPopular: true,
     },
@@ -40,16 +44,17 @@ const Pricing = () => {
       name: 'Ultimate',
       price: '7.500.000',
       renewal: '1.200.000',
+      description: 'Untuk yang serius scale & dominasi market',
+      target: '👉 Cocok untuk agency & bisnis besar',
       features: [
-        '50 Paket Tour',
-        'Hosting 20GB SSD',
-        'Domain .com (1 Thn)',
-        'Custom UI/UX Design',
-        'WhatsApp Integration',
-        'Full SEO Optimization',
-        'Google My Business',
-        'Training Admin',
-        'Support Eksklusif',
+        'Maksimal 50 Paket Tour',
+        'Full Custom Design (Branding Kuat)',
+        'Sistem Booking (Form Inquiry)',
+        'Struktur Seperti OTA (Kategori & Filter)',
+        'Optimasi Conversion',
+        'Tracking (Pixel & Analytics)',
+        'Siap untuk Iklan',
+        'Hosting 20GB + Domain .com',
       ],
       isPopular: false,
     },
@@ -65,10 +70,10 @@ const Pricing = () => {
             viewport={{ once: true }}
             className="text-3xl md:text-4xl font-bold mb-4"
           >
-            Pilihan Paket <span className="text-cyan-400">Investasi</span>
+            Pilih Paket Sesuai <span className="text-cyan-400">Kebutuhan Bisnis Anda</span>
           </motion.h2>
           <p className="text-slate-400 max-w-2xl mx-auto">
-            Pilih paket yang sesuai dengan kebutuhan dan budget bisnis tour Anda.
+            Investasi terbaik untuk masa depan digital bisnis tour & travel Anda.
           </p>
         </div>
 
@@ -91,7 +96,8 @@ const Pricing = () => {
               )}
 
               <div className="mb-8">
-                <h3 className="text-xl font-bold text-white mb-2">{plan.name}</h3>
+                <h3 className="text-xl font-bold text-white mb-1">{plan.name}</h3>
+                <p className="text-xs text-cyan-400 mb-4">{plan.description}</p>
                 <div className="flex items-baseline gap-1 mb-2">
                   <span className="text-sm text-slate-400">Rp</span>
                   <span className="text-4xl font-extrabold text-white">{plan.price}</span>
@@ -99,13 +105,17 @@ const Pricing = () => {
                 <p className="text-xs text-slate-500">Perpanjangan: Rp {plan.renewal}/tahun</p>
               </div>
 
-              <div className="space-y-4 mb-10">
+              <div className="space-y-4 mb-8">
                 {plan.features.map((feature, i) => (
                   <div key={i} className="flex items-start gap-3">
                     <Check className="text-cyan-400 mt-0.5 shrink-0" size={18} />
                     <span className="text-sm text-slate-300">{feature}</span>
                   </div>
                 ))}
+              </div>
+
+              <div className="mb-8 p-3 rounded-xl bg-white/5 border border-white/10 text-center">
+                <p className="text-xs font-bold text-slate-300">{plan.target}</p>
               </div>
 
               <motion.a
@@ -119,7 +129,7 @@ const Pricing = () => {
                 }`}
               >
                 <MessageCircle size={20} />
-                Pilih Paket Ini
+                Konsultasi via WhatsApp
               </motion.a>
             </motion.div>
           ))}

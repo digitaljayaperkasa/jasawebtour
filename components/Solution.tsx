@@ -41,18 +41,18 @@ const Solution = () => {
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
-              Kenapa Harus <span className="text-cyan-400">jasawebtour.com?</span>
+              Kami Buat Website yang <span className="text-cyan-400">Fokus Jualan</span>, Bukan Sekadar Tampilan
             </h2>
             <p className="text-slate-400 mb-8 leading-relaxed">
-              Kami tidak hanya membuat website yang &quot;bagus dilihat&quot;, tapi kami membangun mesin penjual otomatis untuk bisnis tour & travel Anda.
+              Di jasawebtour.com, kami tidak hanya buat website &quot;bagus&quot;, tapi:
             </p>
 
-            <div className="space-y-4">
+            <div className="space-y-4 mb-8">
               {[
-                'Struktur siap jualan (Conversion Optimized)',
-                'Kecepatan loading di atas rata-rata',
-                'Mudah dikelola sendiri (User Friendly)',
-                'Support teknis yang responsif',
+                'Struktur dibuat untuk mengarahkan visitor jadi inquiry',
+                'Setiap halaman didesain untuk meningkatkan trust',
+                'CTA diarahkan langsung ke WhatsApp (cepat closing)',
+                'Optimasi SEO sejak awal (biar mulai masuk Google)',
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-3">
                   <CheckCircle2 className="text-cyan-400" size={20} />
@@ -60,6 +60,10 @@ const Solution = () => {
                 </div>
               ))}
             </div>
+
+            <p className="text-cyan-400 font-bold">
+              👉 Tujuannya jelas: lebih banyak leads, lebih banyak booking
+            </p>
           </motion.div>
 
           <div className="grid sm:grid-cols-2 gap-6">

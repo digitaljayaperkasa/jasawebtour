@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'motion/react';
-import { Star, Quote } from 'lucide-react';
+import { Star, Quote, Check } from 'lucide-react';
 
 const Trust = () => {
   const testimonials = [
@@ -36,9 +36,37 @@ const Trust = () => {
             viewport={{ once: true }}
             className="text-3xl md:text-4xl font-bold mb-4"
           >
-            Dipercaya Oleh <span className="text-cyan-400">Bisnis Tour</span>
+            Kenapa Banyak <span className="text-cyan-400">Bisnis Tour Pilih Kami?</span>
           </motion.h2>
-          <p className="text-slate-400">Apa kata mereka yang sudah menggunakan layanan kami?</p>
+          <div className="max-w-2xl mx-auto space-y-4">
+            {[
+              'Spesialis website tour & travel',
+              'Paham alur booking & perilaku customer',
+              'Fokus hasil (bukan sekadar desain)',
+              'Bisa custom sesuai kebutuhan bisnis',
+              'Support & maintenance jelas',
+            ].map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="flex items-center gap-3 justify-center"
+              >
+                <Check className="text-cyan-400" size={20} />
+                <span className="text-slate-300 font-medium">{item}</span>
+              </motion.div>
+            ))}
+          </div>
+          <motion.p
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="mt-8 text-xl font-bold text-cyan-400"
+          >
+            👉 Kami tidak jual website, kami bantu naikkan potensi closing Anda
+          </motion.p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">

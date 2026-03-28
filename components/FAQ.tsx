@@ -7,28 +7,28 @@ import { Plus, Minus } from 'lucide-react';
 const FAQ = () => {
   const faqs = [
     {
-      question: 'Berapa lama proses pembuatan website?',
-      answer: 'Proses pembuatan biasanya memakan waktu 7-14 hari kerja, tergantung pada kelengkapan data paket tour yang Anda berikan.',
+      question: 'Berapa lama pembuatan website?',
+      answer: 'Rata-rata 3–7 hari kerja, tergantung paket dan revisi.',
     },
     {
-      question: 'Apakah sudah termasuk domain dan hosting?',
-      answer: 'Ya, semua paket sudah termasuk domain .com dan hosting SSD berkecepatan tinggi untuk tahun pertama.',
+      question: 'Apakah bisa request design sendiri?',
+      answer: 'Bisa, semua paket bisa disesuaikan dengan branding Anda.',
     },
     {
-      question: 'Apakah website bisa tampil di halaman pertama Google?',
-      answer: 'Kami membangun website dengan struktur SEO friendly. Namun, untuk hasil maksimal di kata kunci kompetitif, kami sarankan mengambil paket optimasi SEO lanjutan.',
+      question: 'Apakah sudah termasuk domain & hosting?',
+      answer: 'Ya, semua paket sudah termasuk domain .com & hosting.',
     },
     {
-      question: 'Apakah saya bisa menambah paket tour sendiri?',
-      answer: 'Tentu! Kami akan memberikan panduan (video/PDF) cara mengelola website, menambah paket tour, dan mengubah harga dengan mudah.',
+      question: 'Apakah website bisa muncul di Google?',
+      answer: 'Sudah SEO basic, dan bisa dikembangkan lebih lanjut.',
     },
     {
-      question: 'Apakah website mobile friendly?',
-      answer: 'Wajib! Semua website yang kami buat menggunakan desain responsif yang tampil sempurna di HP, tablet, maupun desktop.',
+      question: 'Apakah bisa tambah paket tour nanti?',
+      answer: 'Bisa, sangat fleksibel untuk dikembangkan.',
     },
     {
-      question: 'Bagaimana jika saya butuh bantuan teknis?',
-      answer: 'Kami menyediakan support teknis via WhatsApp. Untuk paket Profesional dan Ultimate, Anda mendapatkan prioritas bantuan lebih cepat.',
+      question: 'Apakah ada support setelah jadi?',
+      answer: 'Ada, termasuk maintenance sesuai paket perpanjangan.',
     },
   ];
 
